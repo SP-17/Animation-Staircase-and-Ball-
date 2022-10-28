@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StairCase and Ball</title>
+    <Style>
+        @keyframes movement {
+            0% {
+                transform: translateX(0px) translateY(0px);
+            }
+            12.5% {
+                transform: translateX(55px) translateY(0px);
+            }
+            25% {
+                transform: translateX(120px) translateY(100px);
+            }
+            37.5% {
+                transform: translateX(175px) translateY(100px);
+            }
+            50% {
+                transform: translateX(220px) translateY(200px);
+            }
+            62.5% {
+                transform: translateX(275px) translateY(200px);
+            }
+            75% {
+                transform: translateX(320px) translateY(300px);
+            }
+            87.5% {
+                transform: translateX(375px) translateY(300px);
+            }
+            100% {
+                transform: translateX(420px) translateY(400px);
+            }
+        }
+        
+        #square1 {
+            width: 100px;
+            height: 95px;
+            border-top: 4px solid rgb(0, 0, 0);
+            border-right: 4px solid rgb(0, 0, 0);
+        }
+        
+        #Ball {
+            width: 95px;
+            height: 95px;
+            opacity: 0.5;
+            background-color: rgb(171, 22, 22);
+            border-radius: 50%;
+            position: relative;
+            animation-name: movement;
+            animation-duration: 5s;
+        }
+    </Style>
+</head>
+
+<body>
+    <div style="margin: 100px 100px 100px 500px;">
+        <div id="Ball">
+        </div>
+        <div id="square1">
+        </div>
+        <div id="square1" style="margin-left:100px;">
+        </div>
+        <div id="square1" style="margin-left:200px;">
+        </div>
+        <div id="square1" style="margin-left:300px;">
+        </div>
+    </div>
+</body>
+
+</html>
